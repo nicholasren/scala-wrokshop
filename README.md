@@ -29,7 +29,7 @@ put the following content to the new file
 [repositories]
 local
 osc: http://maven.oschina.net/content/groups/public/
-typesafe: http://repo.typesafe.com/typesafe/maven-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly
+typesafe-release: http://repo.typesafe.com/typesafe/releases/
 sonatype-oss-releases
 maven-central
 sonatype-oss-snapshots
