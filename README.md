@@ -17,3 +17,21 @@ echo "addSbtPlugin(\"com.github.mpeltonen\" % \"sbt-idea\" % \"1.5.2\")" > build
 ##### generate IDEA project file
 run `sbt gen-idea` to generate IDEA project file, then open this project from generated project files.
 
+##### add extra repos
+create a file named `repositories` under `~/.sbt`
+
+```
+cd ~/.sbt/
+touch repositories
+```
+put the following content to the new file
+```
+[repositories]
+local
+osc: http://maven.oschina.net/content/groups/public/
+typesafe: http://repo.typesafe.com/typesafe/maven-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly
+sonatype-oss-releases
+maven-central
+sonatype-oss-snapshots
+```
+
